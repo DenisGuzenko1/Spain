@@ -1,0 +1,288 @@
+body{
+    background: #FFFFFF; /* Цвет фона */
+    color: #000000; /* Цвет текста */
+}
+
+/* Carousel */
+.my-carousel{
+    padding: 0;
+}
+.my-carousel .carousel-item{
+    display: flex;
+    max-height: 500px;
+}
+
+.my-carousel .carousel-item img{
+    display: table-cell;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+}
+/* Carousel */
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* About */
+
+.about{
+    padding: 50px 20px 30px 5px; /* внутренний отступ блочных тегов от верхнего края, от правого края, снизу, слева */
+}
+
+
+/* About */
+
+/*  Rep */
+.rep {
+    text-align: center;
+    font-size: 54px;
+}
+
+
+.lorem_text{
+    font-size: 24px;
+}
+
+/* Rep */
+
+/* Bikes */
+
+.info{
+    padding: 10px 10px;
+}
+
+/* Bikes */
+
+/* Rent */
+.rent {
+    padding: 50px 20px 30px 5px;
+}
+
+.rent img{
+    width: 100%;
+}
+
+/* Rent */
+
+.footer{
+   background-color: #1A1A1A;
+}
+.footer .container{
+    padding-top: 50px;
+}
+
+.footer a, footer li{
+    text-decoration: none;
+    transition: all .3s;
+    color: #ccc;
+}
+
+.footer a:hover{
+    color: #fc0;
+}
+
+.footer li a{
+    display: block;
+}
+
+.footer-icons{
+    display: inline block;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.modal_window{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .7);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal_box{
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    margin: 30px 15px;
+    background-color: white;
+    box-shadow: 4px 4px 16px -3px rgba(34, 60, 80, 0.35);
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.modal_window.open_window{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_window.open_window .modal_box{
+    transform: scale(1);
+}
+
+.modal_close_btn{
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.modal_close_btn svg path{
+    transition: fill .4s;
+}
+
+.modal_close_btn:active svg path{
+    fill: red;
+}
+
+.modal_close_btn:hover svg path{
+    fill: red;
+}
+
+.col-md-6.lorem-text{
+    font-size: 24px;
+}
+
+.teacher{
+    width: 55%;
+}
+
+#id_name{
+    width: 280px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_phone_number{
+    width: 250px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_mail{
+    width: 250px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_level{
+    width: 173px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_target{
+    width: 160px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_time{
+    width: 110px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_communication_method{
+    width: 250px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_special_requirements{
+    width: 250px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_experience{
+    width: 250px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+
+#id_about_user{
+    width: 250px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+#id_comments{
+    width: 250px;
+    background-color: #EBECEE;
+    border-radius: 10px;
+    border-color: #FFF554;
+    height: 40px;
+    border-width: 3px;
+}
+
+@media screen and (max-width: 1240px){
+    .lorem_text{
+      font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1240px){
+    .teacher{
+      width: 75%;
+    }
+}
+
+@media screen and (max-width: 1240px){
+    .col-xl-6 col-md-6 col-lg-6{
+        margin-left: auto; margin-right: auto;
+    }
+}

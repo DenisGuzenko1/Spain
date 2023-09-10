@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Вы удачно записались на занятие!{% endblock %}
+{%  block content %}
+    <div class="container" style="text-align: center; margin-bottom: 300px;">
+    <h1 class="text-center" style="padding-top: 250px;">Вы успешно зарегистрировались</h1>
+    <h2 class="text-center">Связаться со мной можно с помощью</h2>
+    <a href="https://t.me/kirylrey"><img src="{% static 'img/telegram.svg' %}" alt="telegram"></a>
+    <a href="https://wa.me/+34638248572"><img src="{% static 'img/whatsapp.svg' %}" alt="whatsapp"></a>
+    <a href="https://instagram.com/espanol_essence?igshid=OGQ5ZDc2ODk2ZA==">
+        <img src="{% static 'img/instagram.svg' %}" alt="instagram"></a>
+    </div>
+{% endblock %}

@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Репетитор по Испанскому{% endblock %}
+{%  block content %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static '/css/base.css' %}">
+<div class="container-fluid my-carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
+         style="padding-top: 50px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="{% static 'img/first_pic.png' %}" class="d-block w-100" alt="cool_bike">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Добро пожаловать в увлекательное путешествие изучения испанского языка! Со мной будет легко и
+                        интересно.</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="{% static 'img/Second_picture 1.png' %}" class="d-block w-100" alt="cool_bike">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Я с радостью помогу вам освоить испанский язык с нуля до уверенного общения. Давайте вместе
+                        достигнем цели!</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="{% static 'img/Third_picture 1.png' %}" class="d-block w-100" alt="delivery">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Моя цель - не только научить вас говорить по-испански, но и погрузить вас в богатство испанской
+                        культуры и языка.</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div style="margin-top: 50px;" id="about" class="about">
+    <!-- email section start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image_1"><img class="teacher" src="{% static 'img/prep_span.png' %}"></div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="mark_text">Кирилл</h1>
+                <h3>Преподаватель и переводчик</h3>
+                <p class="lorem_text">
+                    Я много лет преподаю испанский язык, который стал для меня вторым родным языком
+                    еще в детстве, а уже в юности я переехал в Испанию и сейчас живу здесь.
+                    Также я люблю путешествовать и владею польским и немецким языками,
+                    мне безудержно интересно искусство различных стран и народов.
+                    Моя цель - научить вас современному испанскому и помочь вам погрузиться в культуру,
+                    жизнь, обычаи и эмоции Испании.</p>
+                <style>.lorem_text @media (max-width: 768px;) {font-size: 20px;}</style>
+                <button style="width: 200px; height: 50px;" class="btn btn-warning" id="open-modal-btn_2">Записаться
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id='advantages' style="margin-top: 50px;" class="container">
+    <h2 style="margin-bottom: 50px;" class="rep">Преимущества</h2>
+    <div class="row" style="color: #FFFFFF">
+        <div class="col-xl-6 col-md-6 col-lg-6"
+             style="background-color:#E8BCB9; margin-bottom: 15px; border-radius: 20px; margin-left: auto; margin-right: auto; width: 650px;">
+            <div class="info">
+                <h3 style="padding: 10px 10px;">Глубокая привязанность и опыт</h3>
+                <p style="padding-left: 10px;">Начав изучать испанский в 8 лет, я мгновенно влюбился в язык и культуру.
+                    15 лет постоянных путешествий в Испании и конечный переезд позволяют мне делиться внутренними
+                    знаниями и пониманием страны.</p>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-lg-6"
+             style="background-color:#F39F5A; margin-bottom: 15px; border-radius: 20px; margin-left: auto; margin-right: auto; width: 650px;">
+            <div class="info">
+                <h3 style="padding: 10px 10px;">Профессиональная эффективность</h3>
+                <p style="padding-left: 10px;">Мой долголетний опыт позволяет мне преподавать с легкостью и
+                    эффективностью. Я могу разложить сложные концепции на усваиваемые порции, помогая ученикам освоить
+                    даже самые сложные темы.</p>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-lg-6"
+             style="background-color:#AE445A; margin-bottom: 15px; border-radius: 20px; margin-left: auto; margin-right: auto; width: 650px;">
+            <div class="info">
+                <h3 style="padding: 10px 10px;">Персонализированный подход</h3>
+                <p style="padding-left: 10px;">Я понимаю, что каждый ученик уникален. Мой метод обучения учитывает
+                    индивидуальные потребности и уровень каждого ученика . Мы вместе преодолеваем барьеры и двигаемся
+                    вперед.</p>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-lg-6"
+             style="background-color:#662549; margin-bottom: 15px; border-radius: 20px; margin-left: auto; margin-right: auto; width: 650px;">
+            <div class="info">
+                <h3 style="padding: 10px 10px;">Легкость и радость обучения</h3>
+                <p style="padding-left: 10px;">Моя цель – сделать обучение приятным и увлекательным. Я создаю позитивную
+                    и дружелюбную обстановку на уроках, что позволяет учиться с удовольствием.</p>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-lg-6"
+             style="background-color:#451952; margin-bottom: 15px; border-radius: 20px; margin-left: auto; margin-right: auto; width: 650px;">
+            <div class="info">
+                <h3 style="padding: 10px 10px;">Преодоление комплексов</h3>
+                <p style="padding-left: 10px;">Мои уроки помогут вам преодолеть языковые барьеры и набраться
+                    уверенности. Вместе мы разберемся с любыми сложностями, и вы почувствуете свой прогресс.</p>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-lg-6"
+             style="background-color:#1D1A39; margin-bottom: 15px; border-radius: 20px; margin-left: auto; margin-right: auto; width: 650px;">
+            <div class="info">
+                <h3 style="padding: 10px 10px;">Легкость в общении</h3>
+                <p style="padding-left: 10px;">Моя легкая и дружелюбная натура позволяет мне находить общий язык с
+                    учениками, создавая комфортную обстановку для обучения. От детей 3-х лет до детей 50+ лет</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id='price' style="font-size: 24px; margin-top: 50px;">
+    <h2 style="text-align: center; font-size: 54px;">Цены</h2>
+    <div style="margin-top: 50px;" class="row">
+        <div class="col-md-6">
+            <p><img src="{% static 'img/user.svg' %}" style="width: 40px; height: 50px;" alt="user"><b
+                    style="padding-left: 20px;">Индивидуальные занятия</b>
+                <br> Одно индивидуальное занятие 20 € / 45 мин
+                <br> Пакет из 5 индивидуальных занятий: 90 € <br>(экономия 10 евро)
+                <br> Пакет из 10 индивидуальных занятий: 170 € <br> (экономия 30 евро)
+                <br> Пакет из 20 индивидуальных занятий: 300 € <br>(экономия 100 евро)
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p><img src="{% static 'img/users.svg' %}" style="width: 50px; height: 50px;" alt="user"><b
+                    style="padding-left: 20px;">Парные</b>
+                <br>Одно групповое занятие: 30 € за пару <br>(15 евро с каждого студента)
+                <br>Пакет из 5 групповых занятий: 135 € за пару <br>(экономия 15 евро с каждого студента)
+                <br>Пакет из 10 групповых занятий: 240 € за пару <br>(экономия 60 евро с каждого студента)
+                <br>Пакет из 20 групповых занятий: 450 € за пару <br>(экономия 150 евро с каждого студента)
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12"
+     style="background: #000000; padding-top: 50px; margin-top: 50px; color: #FFFFFF; text-align: center;">
+    <b style="font-size: 54px;"><p>Оставьте заявку и мы свяжемся с вами</p></b>
+    <p style="font-size: 24px; margin-top: 100px;">Одно занятие — 45 минут</p>
+    <button class="btn btn-secondary" style="margin-bottom: 100px;" id="open-modal-btn">Записаться</button>
+</div>
+
+<div class="modal_window" id="my-modal">
+    <div class="modal_box">
+        <button class="modal_close_btn" id="close-my-modal-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.29032 20L10.0461 11.2442L18.8018 20L20 18.8018L11.2442 10.0461L20 1.29032L18.8018 0L10.0461 8.75576L1.29032 0L0 1.29032L8.75576 10.0461L0 18.8018L1.29032 20Z"
+                      fill="black"/>
+            </svg>
+        </button>
+        <h2>Запись на занятие</h2>
+        <form style="box-sizing: border-box; background-color: black; color: white; padding: 30px 15px; z-index: -1;"
+              action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-secondary">Записаться</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
